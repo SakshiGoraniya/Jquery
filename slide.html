@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideDown(3000);
+                });
+                $("#unflip").click(function(){
+                    $("#panel").slideUp(3000);
+                });
+                $("#stop").click(function(){
+    $("#panel").stop();
+  });
+            });
+        </script>
+
+</head>
+
+<body>
+    <button id="stop">Stop sliding</button><br><br>
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="unflip">Click to slide up panel</div>
+    <div id="panel">Hello world!</div>
+</body>
+
+</html>

@@ -58,3 +58,42 @@ display: none;
   border:1px solid black;
   display: none;
 }
+#div4
+{
+  width:250px;
+  height:250px;
+  background-color:rgb(142, 233, 133);
+  float:left;
+  margin:20px;
+  border:1px solid black;
+  
+}
+#flip
+{
+  height: 50px;
+  background-color: lightcoral;
+}
+#unflip
+{
+  height: 50px;
+  background-color: rgb(44, 170, 153);
+}
+#panel
+{
+  height:200px;
+  background-color: lightgreen;
+  display:none;
+}
+#adiv
+{
+width:200px;
+height:200px;
+background:lightsteelblue
+
+}
+#box
+{
+  background-color: lightblue;
+  padding: 10px;
+  border:1px solid black;
+}

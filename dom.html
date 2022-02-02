@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                var a=$('#box').html();
+                console.log(a);
+            });
+            $(document).ready(function(){
+                var b=$('#box').text();
+                console.log(b);
+            });
+            $(document).ready(function(){
+                var b=$('#box').attr('class');
+                console.log(b);
+            });
+            $(document).ready(function(){
+                $("#studentform").submit(function(){
+                    var name=$("#fname").val();
+                   
+                    
+                });
+                $("#box p").text(name);
+            });
+          
+               
+          
+
+
+        </script>
+</head>
+<body>
+    <h1>get methods</h1>
+   
+    <form id="studentform">
+        <label for="">name</label><input type="text" id="fname"><br><br>
+        <label for="">surname</label><input type="text" id="fname"><br><br>
+        <input type="submit">
+    
+    </form><br><br>
+    <div id="box" class="abc">
+       <p>your types name will appear here</p>
+    </div><br><br>
+    
+</body>
+</html>
