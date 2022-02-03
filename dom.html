@@ -24,31 +24,37 @@
                 console.log(b);
             });
             $(document).ready(function(){
-                $("#studentform").submit(function(){
+                $("#sb").click(function(){
                     var name=$("#fname").val();
-                   
+                $("#box h2").text("sakshi");
+                   return false;
                     
                 });
-                $("#box p").text(name);
+            
             });
-          
-               
-          
-
+            // $(document).ready(function(){
+            // $("#sb").click(function(){
+            //     $("#box h2").text("sakshi");
+            //     return false;
+            // })    
+            // })
+        
 
         </script>
 </head>
 <body>
-    <h1>get methods</h1>
+    <h1>Get methods</h1>
    
     <form id="studentform">
         <label for="">name</label><input type="text" id="fname"><br><br>
         <label for="">surname</label><input type="text" id="fname"><br><br>
-        <input type="submit">
+        <button id="sb">submit</button>
     
     </form><br><br>
     <div id="box" class="abc">
-       <p>your types name will appear here</p>
+        <h2>hello</h2>
+       <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam debitis fugit minus sapiente impedit totam nihil accusantium voluptatem mollitia libero architecto laborum cumque asperiores quae eveniet, similique eos, sequi sit?</p><br>
+     
     </div><br><br>
     
 </body>
