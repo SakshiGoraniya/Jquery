@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To do list using Jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <input type="text" id="newtask" placeholder="Add a new Task">
+            <h2>Pending Tasks:</h2>
+            <div class="notcomp">
+              <ul></ul>
+            </div>
+            <div class="comp">
+                <h2>Completed Tasks:</h2>
+            </div>
+    </center>
+
+    </div>
+<script>
+    $(document).ready(function(){
+       $("#newtask").change(function(){
+        var task=$('<div class="task"></div>').text($("#newtask").val());
+
+
+        var check = $("<i class='fas fa-check'></i>").click(function(){
+             var p = $(this).parent();
+            p.fadeOut(function(){
+              $(".comp").append(p);
+              p.fadeIn();
+            });
+            $(this).remove();
+          });
+
+          var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+            var p = $(this).parent();
+            p.fadeOut(function(){
+              p.remove();
+            });
+          });
+          
+
+          task.append(check,del);
+        $(".notcomp").append(task);
+        $("#newtask").val("");
+       });
+    });
+</script>
+    
+</body>
+</html>
