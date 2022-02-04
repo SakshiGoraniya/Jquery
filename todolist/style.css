@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "verdana";
+    box-sizing: border-box;
+  }
+  
+.container
+{
+margin: 100px;
+padding:30px;
+height:auto;
+width:max-content;
+background-color: white;
+border: #000;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+#newtask
+{
+    width: 400px;
+    border:none;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+     
+}
+.notcomp .task
+{
+    height:50px;
+    background:#666;
+   outline:none;
+    border-radius: 5px;;
+    margin:10px;
+   align-content: center;
+   padding: 8px;
+   font-size:30px;
+   color:white;
+   
+}
+.comp .task
+{
+    height:50px;
+    background:#666;
+   outline:none;
+    border-radius: 5px;;
+    margin:10px;
+   align-content: center;
+   padding: 8px;
+   font-size:30px;
+   color:white;
+   
+}
+.fa-check{
+    float:right;
+    color:white;
+    margin-left: 10px;
+}
+.fa-trash-alt
+{
+    float:right;
+    color:white;
+}
